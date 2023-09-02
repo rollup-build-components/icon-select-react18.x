@@ -1,0 +1,83 @@
+{
+  "name": "@rollup-build-components/icon-select-react18.x",
+  "description": "基于 Ant Design5.x 图标选择器",
+  "homepage": "https://github.com/rollup-build-components/icon-select-react18.x",
+  "author": "lin pengteng <china.linpengteng@gmail.com>",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "react",
+    "rollup",
+    "ant-design",
+    "rollup-react",
+    "@ant-design/icons"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "scripts": {
+    "build": "shx rm -rf dist && rollup --config rollup.config.ts --configPlugin typescript",
+    "eslint": "eslint --fix --quiet src --ext .vue,.tsx,.jsx,.ts,.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rollup-build-components/icon-select-react18.x.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rollup-build-components/icon-select-react18.x/issues"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^5.2.5",
+    "antd": "^5.8.5",
+    "less": "^4.2.0",
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.11",
+    "@babel/plugin-transform-runtime": "^7.22.10",
+    "@babel/preset-env": "^7.22.14",
+    "@babel/preset-react": "^7.22.5",
+    "@babel/runtime": "^7.22.11",
+    "@rollup/plugin-alias": "^5.0.0",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-commonjs": "^25.0.4",
+    "@rollup/plugin-node-resolve": "^15.2.1",
+    "@rollup/plugin-typescript": "^11.1.3",
+    "@types/react": "^18.2.21",
+    "@typescript-eslint/eslint-plugin": "^6.5.0",
+    "@typescript-eslint/parser": "^6.5.0",
+    "@vitejs/plugin-react": "^4.0.4",
+    "cz-message-helper": "^1.3.0",
+    "eslint": "^8.48.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "lint-staged": "^14.0.1",
+    "prettier": "^3.0.3",
+    "rollup": "^3.28.1",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-typescript2": "^0.35.0",
+    "shx": "^0.3.4",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2",
+    "vite": "^4.4.9"
+  },
+  "config": {
+    "cz-message-helper": {
+      "config": ".cz-message.cjs"
+    },
+    "commitizen": {
+      "path": "node_modules/cz-message-helper"
+    }
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
